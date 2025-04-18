@@ -1,0 +1,70 @@
+/*header styles*/
+header {
+    background-color: #0056b3;
+    padding:20px;
+    color:white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h2 {
+    text-align: center;
+}
+/*body styles*/
+body {
+    background-color:#f4f4f4;
+    font-family: Arial, sans-serif;
+}
+/*user details styles*/
+div > #saveButton {
+    margin-top: 20px;
+}
+#age, #email, #userName {
+    display: flex;
+}
+#user-details {
+    margin-top: 30px;
+}
+/*button styles*/
+button {
+    margin-top:30px;
+    padding:10px;
+    border-radius: 40px;
+    background-color: #0056b3;
+    color:white;
+}
+button:hover {
+    background-color: lightblue;
+}
+#blank {
+    position: relative;
+}
+@media only screen and (min-width:571px) {
+    #age, #email, #userName {
+        position: relative;
+    }
+    input[type="text"]{
+        position: absolute;
+        left:400px;
+    }
+    input[type="email"]{
+        position: absolute;
+        left:400px;
+    }
+    input[type="number"]{
+        position: absolute;
+        left:400px;
+    }
+    #saveButton {
+        position: absolute;
+        left:120px;
+        top:-59px;
+    }
+} 
+@media only screen and (max-width:570px){
+    #age, #email, #userName{
+        flex-direction: column;
+    }
+    input[type="text"],input[type="email"],input[type="number"]{
+       width:200px;
+       margin-top:10px;
+    }
+}

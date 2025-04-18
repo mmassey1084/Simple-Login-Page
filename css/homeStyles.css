@@ -1,0 +1,126 @@
+/**
+ * Author: Michael Massey
+ * Date: 2024-11-03
+ * Description: CSS styles for the user registration form, including styling for input fields, buttons, labels, and overall page layout. 
+ * Styles provide a clean, modern look with consistent spacing, colors, and typography.
+ */
+
+/* Styles for text, number, email, and password input fields */
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"] {
+    margin-bottom: 10px; /* Adds space below each input field */
+    border: 2px solid #ddd; /* Defines the border thickness and color */
+    border-radius: 4px; /* Rounds the corners of the input fields */
+    padding: 8px; /* Adds padding inside the input fields */
+    width: 400px; /* Sets a fixed width for the input fields */
+}
+#user > input[type="text"]{
+    margin-left: 10px;
+}
+input[type="number"]{
+    margin-left:21px;
+}
+input[type="email"]{
+    margin-left:42px;
+}
+.flex-container{
+    display: flex;
+}
+
+/* Style for the "Show Password" checkbox */
+#showPassword {
+    margin: 0; /* Removes default margin around the checkbox */
+    flex-direction: row; /* Sets the direction to row for alignment with the label */
+}
+
+/* Button styling */
+button {
+    margin-right: 5px; /* Adds space to the right of each button */
+    padding: 10px 20px; /* Adds internal padding for button content */
+    border: none; /* Removes the default button border */
+    border-radius: 4px; /* Rounds the corners of the buttons */
+    cursor: pointer; /* Changes cursor to a pointer on hover, indicating clickability */
+    background-color: #0056b3; /* Sets a blue background color for buttons */
+    color: white; /* Sets the button text color to white */
+    margin-top: 10px; /* Adds space above each button */
+    width: 420px; /* Ensures buttons match the width of input fields for uniformity */
+}
+button:hover {
+    background-color: lightblue;
+}
+/* Label styling */
+label {
+    margin-right: 10px; /* Adds space to the right of each label for better alignment */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif; /* Sets a clean, modern font for text */
+    margin: 20px; /* Adds space around the page content */
+    padding: 0; /* Removes default padding from the body */
+    background-color:#0056b3 /* Sets a light gray background color for the page */
+}
+h1 {
+    text-align: center;
+    color:white
+}
+/* Form layout styling */
+form {
+    display: flex; /* Sets form layout to flexbox for alignment */
+    flex-direction: column; /* Stacks form elements vertically */
+    justify-content: center;
+    align-items: center;
+    margin:40px;
+    background-color: #f4f4f4;
+    padding:40px;
+    box-shadow: 5px 5px 10px white;
+    border-radius: 40px;
+}
+#user {
+    padding:10px;
+}
+.flex-container2 {
+    flex-direction: column;
+    display: flex;
+}
+.feedbackMessages {
+    padding:10px;
+}
+/*validation message styles*/
+#passVal {
+    color:green;
+    margin-top:10px;
+}
+.failVal {
+    color:red;
+    margin:5px;
+}
+@media only screen and (max-width:700px){
+    .flex-container{
+        flex-direction: column;
+    }
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    #user > input[type="text"]{
+        margin-left:0;
+    }
+}
+/*mobile styles*/
+@media only screen and (max-width:550px) {
+    input[type="text"],
+    input[type="number"],
+    input[type="email"],
+    input[type="password"] {
+        width:200px;
+    }
+    button {
+        width:200px;
+    }
+    .failVal {
+        width:70%;
+    }
+}
